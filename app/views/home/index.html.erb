@@ -1,0 +1,14 @@
+
+<div class="container my-5" >
+  <%if user_signed_in?%>
+      <div class="text-center">
+        <%= image_tag '/1.jpg' ,alt:"my-image " ,height:"100px",widht:"80px", class:"rounded-circle"%>
+      </div>
+        <h1 class="text-center display-1">Hey, <br><%=current_user.email%></h1>
+          <hr>
+<%else%>
+<h1 class="text-center">Devise Gems</h1>
+  <%end%>
+
+    
+</div>
